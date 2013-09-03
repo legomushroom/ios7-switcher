@@ -12,10 +12,11 @@ body, html
 
 gs = 10px
 mainColor = #ccc
+animationDuration = .5s
 .checkbox-e
 	margin 200px
 	border-radius: 2*gs
-	width 10*gs
+	width 8*gs
 	height 4*gs
 	border 1px solid mainColor
 	display block
@@ -34,9 +35,12 @@ mainColor = #ccc
 		&:checked
 			& + label
 				left 100%
-				transform rotate(180deg)
+				-webkit-transform rotate(180deg)
 				margin-left - 4*gs + 1px
-
+				// 5!
+				&:after
+					top 20%
+					transform top animationDuration linear
 
 	label
 		rect 4*gs
@@ -49,7 +53,7 @@ mainColor = #ccc
 		font-size 4*gs
 		color mainColor
 		text-align center
-		transition all .5s linear
+		transition all animationDuration linear
 
 		&:before
 			content ''
@@ -67,9 +71,33 @@ mainColor = #ccc
 		&:after
 			content '⌣'
 			position absolute
-			top  60%
+			top 60%
 			left 30%
 			font-size 18px
+			transform top animationDuration linear
+
 			
+@keyframes drop
+	0%
+		top 60%
+	
+	0.000001%
+		top 20%
+
+	100%
+		top 20%
+
+@keyframes rise
+	0%	
+		top 20%
+	
+	0.000001%
+		top 60%
+
+	100%
+		top 60%
+
+
+
 
 
