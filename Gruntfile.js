@@ -24,7 +24,7 @@ module.exports = function(grunt) {
     },
     watch: {
         styles: {
-            files: ['css/**/*.css'],
+            files: ['css/main.css'],
             tasks: ['autoprefixer']
         }
     }
