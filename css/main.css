@@ -21,7 +21,7 @@ html {
   display: block;
   position: relative;
   cursor: pointer;
-  background-color: #ccc;
+  overflow: hidden;
 }
 .checkbox-e input {
   opacity: 0;
