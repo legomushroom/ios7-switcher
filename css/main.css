@@ -38,7 +38,7 @@ html {
 }
 .checkbox-e input:checked + label:after {
   top: 20%;
-  transform: top 0.5s linear;
+  -webkit-transition: top 0.5s linear;
 }
 .checkbox-e label {
   width: 40px;
@@ -74,7 +74,7 @@ html {
   top: 60%;
   left: 30%;
   font-size: 18px;
-  transform: top 0.5s linear;
+  -webkit-transition: top 0.5s linear;
 }
 @-moz-keyframes drop {
   0% {
