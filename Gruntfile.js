@@ -18,7 +18,7 @@ module.exports = function(grunt) {
           browsers: ['last 3 version']
         },
         files: {
-          'css/main.css': ['css/**/*.css']
+          'css/main-dist.css': ['css/**/*.css']
         }
       }
     },
