@@ -36,6 +36,7 @@ html {
   left: 100%;
   -webkit-transform: rotate(180deg);
   margin-left: -39px;
+  box-shadow: 10px 0 0 #d1f2a5, 20px 0 0 #d1f2a5, 30px 0 0 #d1f2a5, 40px 0 0 #d1f2a5;
 }
 .checkbox-e input:checked + label:after {
   top: -10%;
@@ -54,6 +55,7 @@ html {
   color: #ccc;
   text-align: center;
   transition: all 0.25s ease-in;
+  box-shadow: 10px 0 0 #ffe8e8, 20px 0 0 #ffe8e8, 30px 0 0 #ffe8e8, 40px 0 0 #ffe8e8;
 }
 .checkbox-e label:before {
   content: '';

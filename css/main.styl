@@ -13,6 +13,9 @@ body, html
 gs = 10px
 mainColor = #ccc
 animationDuration = .25s
+falseBg = #FFE8E8
+trueBg 	= #D1F2A5
+
 .checkbox-e
 	margin 200px
 	border-radius: 2*gs
@@ -38,12 +41,12 @@ animationDuration = .25s
 				left 100%
 				-webkit-transform rotate(180deg)
 				margin-left - 4*gs + 1px
+				box-shadow gs 0 0 trueBg, 2*gs 0 0 trueBg, 3*gs 0 0 trueBg, 4*gs 0 0 trueBg
 
 				// 5!
 				&:after
 					top -10%
 					-webkit-transition top animationDuration ease-in
-
 	label
 		rect 4*gs
 		border 1px solid mainColor
@@ -56,6 +59,7 @@ animationDuration = .25s
 		color mainColor
 		text-align center
 		transition all animationDuration ease-in
+		box-shadow gs 0 0 falseBg, 2*gs 0 0 falseBg, 3*gs 0 0 falseBg, 4*gs 0 0 falseBg
 
 		&:before
 			content ''
